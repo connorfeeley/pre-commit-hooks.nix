@@ -2118,6 +2118,13 @@ in
               "${tools.headache}/bin/headache -h ${settings.headache.header-file}";
         };
 
+      reuse =
+        {
+          name = "reuse";
+          description = "Verifies that the project copyright and licensing is compliant with the REUSE specification.";
+          entry = "${pkgs.reuse}/bin/reuse lint";
+        };
+
       convco = {
         name = "convco";
         entry =

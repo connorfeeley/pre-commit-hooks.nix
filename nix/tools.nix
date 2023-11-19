@@ -47,6 +47,7 @@
 , pkgsBuildBuild
 , pre-commit-hook-ensure-sops ? null
 , python39Packages
+, reuse
 , ruff ? null
 , runCommand
 , rustfmt
@@ -112,6 +113,7 @@ in
     opam
     ormolu
     pre-commit-hook-ensure-sops
+    reuse
     revive
     ruff
     rustfmt
